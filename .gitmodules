@@ -1,0 +1,6 @@
+[submodule "ssh/ssh-config"]
+	path = ssh/ssh-config
+	url = git@github.com:ArielSzekely/ssh-config.git
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
