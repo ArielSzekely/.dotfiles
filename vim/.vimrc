@@ -47,3 +47,5 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\
+au Bufenter,BufRead,BufnewFile *.p4 set filetype=p4
+au Bufenter,BufRead,BufnewFile *.p4 source ~/.vim/p4.vim
