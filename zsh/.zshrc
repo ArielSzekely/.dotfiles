@@ -12,6 +12,7 @@ ZSH_THEME="arielszekely"
 
 # Don't share history between tmux panes
 setopt no_share_history
+unsetopt share_history
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
