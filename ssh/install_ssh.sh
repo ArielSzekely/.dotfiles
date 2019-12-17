@@ -17,10 +17,12 @@ SSH_VERSION_MINOR=${SSH_VERSION[1]}
 if (($SSH_VERSION_MAJOR < 7 || $SSH_VERSION_MAJOR == 7 && $SSH_VERSION_MINOR < 3)); then
   ln -s ~/.dotfiles/ssh/ssh-config/ssh-servers ~/.ssh/config
 else
+  
+  # Link ssh files to be included
   ln -s ~/.dotfiles/ssh/ssh-config/ssh-servers ~/.ssh/ssh-servers
   ln -s ~/.dotfiles/ssh/ssh-config/generic-config ~/.ssh/generic-config
 
-
+  # Link ssh config file depending on whether we are running on Mac or Linux
   if [ "$(~/.dotfiles/scripts/is-mac.sh)" == 1 ]; then
     ln -s ~/.dotfiles/ssh/ssh-config/mac-config ~/.ssh/config
   else
