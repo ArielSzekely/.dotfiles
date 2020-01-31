@@ -1,1 +1,4 @@
 *.sw*
+tmux/.tmux/resurrect
+tmux/.tmux/plugins/tmux-resurrect
+tmux/.tmux/plugins/tmux-sensible
