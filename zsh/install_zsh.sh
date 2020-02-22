@@ -3,7 +3,7 @@
 echo 'Linking zsh'
 
 # Clone oh-my-zsh if it isn't installed already
-if [ -d '~/.oh-my-zsh' ]; then
+if [ ! -d '~/.oh-my-zsh' ]; then
   echo 'Installing .oh-my-zsh'
   ./install_oh_my_zsh.sh
 fi
