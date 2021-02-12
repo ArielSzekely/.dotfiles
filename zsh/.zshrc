@@ -15,6 +15,9 @@ ZSH_THEME="arielszekely"
 setopt no_share_history
 unsetopt share_history
 
+# Search ~/.ssh/config before ~/.ssh/known_hosts
+zstyle ':completion:*:ssh:*' hosts off
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
