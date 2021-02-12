@@ -50,5 +50,6 @@ set statusline+=\
 au Bufenter,BufRead,BufnewFile *.p4 set filetype=p4
 au Bufenter,BufRead,BufnewFile *.p4 source ~/.vim/p4.vim
 
-" Format go code on save
-au BufWritePost *.go !gofmt -w %
+" Format go code on save, but do it silently
+au BufNewFile,BufRead *.go setlocal autoread
+au BufWritePost *.go silent! !gofmt -w %
