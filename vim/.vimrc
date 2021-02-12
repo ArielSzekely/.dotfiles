@@ -8,7 +8,7 @@ set backspace=indent,eol,start
 set tabstop=2 
 set colorcolumn=81
 
-"Only expand tabs if not in a Makefile
+" Only expand tabs if not in a Makefile
 let _curfile = expand("%:t")
 if _curfile =~ "Makefile" || _curfile =~ "makefile" || _curfile =~ ".*\.mk"
 set noexpandtab
@@ -49,3 +49,6 @@ set statusline+=\ %l:%c
 set statusline+=\
 au Bufenter,BufRead,BufnewFile *.p4 set filetype=p4
 au Bufenter,BufRead,BufnewFile *.p4 source ~/.vim/p4.vim
+
+" Format go code on save
+au BufWritePost *.go !gofmt -w %
