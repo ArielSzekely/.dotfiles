@@ -7,6 +7,7 @@ set nopaste
 set backspace=indent,eol,start
 set tabstop=2 
 set colorcolumn=81
+set guicursor=i:block " Keep cursor as block in insert mode
 
 " Only expand tabs if not in a Makefile
 let _curfile = expand("%:t")
