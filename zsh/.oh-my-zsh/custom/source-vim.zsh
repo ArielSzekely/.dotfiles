@@ -1,1 +1,1 @@
-alias vim="vim -S ~/.vimrc"
+alias vim="/usr/bin/vim -S ~/.vimrc"
