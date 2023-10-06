@@ -7,6 +7,7 @@ set nopaste
 set backspace=indent,eol,start
 set tabstop=2 
 set colorcolumn=81
+set background=dark
 set guicursor=i:block " Keep cursor as block in insert mode
 
 " Only expand tabs if not in a Makefile
@@ -54,3 +55,7 @@ au Bufenter,BufRead,BufnewFile *.p4 source ~/.vim/p4.vim
 " Format go code on save, but do it silently
 au BufNewFile,BufRead *.go setlocal autoread
 au BufWritePost *.go silent! !gofmt -w % 2> /dev/null
+
+" Format rust code on save, but do it silently
+au BufNewFile,BufRead *.rs setlocal autoread
+au BufWritePost *.rs silent! !rustfmt -w % 2> /dev/null
