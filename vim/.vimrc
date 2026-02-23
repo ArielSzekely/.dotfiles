@@ -58,4 +58,4 @@ au BufWritePost *.go silent! !gofmt -w % 2> /dev/null
 
 " Format rust code on save, but do it silently
 au BufNewFile,BufRead *.rs setlocal autoread
-au BufWritePost *.rs silent! !rustfmt -w % 2> /dev/null
+au BufWritePost *.rs silent! !rustfmt --edition 2024 -w % 2> /dev/null
