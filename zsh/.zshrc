@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin:$HOME/go/bin"
 export PATH="$PATH:/usr/local/opt/riscv-gnu-toolchain/bin"
 
 # Set name of the theme to load --- if set to "random", it will
