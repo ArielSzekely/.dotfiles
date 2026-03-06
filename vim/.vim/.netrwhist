@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin1/src'
+let g:netrw_dirhist_8='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin1'
+let g:netrw_dirhist_7='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin1/src'
+let g:netrw_dirhist_6='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin3/wit'
+let g:netrw_dirhist_5='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin3'
+let g:netrw_dirhist_4='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/spin3/src'
+let g:netrw_dirhist_3='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/rate/src'
+let g:netrw_dirhist_2='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/rate'
+let g:netrw_dirhist_1='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/rate/target'
+let g:netrw_dirhist_0='/home/arielck/workspace/projects/research/sigmawasm/usrvs/hotel/rate'
