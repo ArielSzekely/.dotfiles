@@ -8,6 +8,7 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(protoc:*)",
+      "Bash(chmod:*)",
       "Bash(make:*)",
       "Bash(cargo build:*)",
       "Bash(cargo check:*)",
