@@ -34,7 +34,6 @@ let branchname=StatuslineGit()
 
 " Always enable status line
 set laststatus=2
-set redrawtime=10000
 set re=0
 
 " Tab line
