@@ -101,4 +101,4 @@ au BufWritePost *.rs silent! !rustfmt --edition 2024 % 2> /dev/null
 
 " Format JS/TS/JSON on save using prettier
 au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc setlocal autoread
-au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc silent! !prettier --write % 2> /dev/null
+au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc silent! !prettier --write % > /dev/null 2>&1
