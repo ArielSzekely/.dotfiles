@@ -1,8 +1,29 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(tail:*)",
+      "Bash(head:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(protoc:*)",
+      "Bash(make:*)",
+      "Bash(cargo build:*)",
+      "Bash(cargo check:*)",
+      "Bash(go build:*)",
+      "Bash(go vet:*)",
+      "Bash(go test:*)",
+      "Bash(sed -i:*)",
+      "Bash(sed -n:*)",
+      "Read(//home/arielck/.cargo/registry/src/**)"
+    ]
+  },
   "enabledPlugins": {
     "clangd-lsp@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true,
-    "gopls-lsp@claude-plugins-official": true
+    "gopls-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
   },
   "effortLevel": "medium"
 }
