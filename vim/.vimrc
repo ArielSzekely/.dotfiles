@@ -34,6 +34,8 @@ let branchname=StatuslineGit()
 
 " Always enable status line
 set laststatus=2
+set redrawtime=10000
+set re=0
 
 " Tab line
 "function! Tabline()
@@ -97,3 +99,7 @@ au BufWritePost *.go silent! !gofmt -w % 2> /dev/null
 " Format rust code on save, but do it silently
 au BufNewFile,BufRead *.rs setlocal autoread
 au BufWritePost *.rs silent! !rustfmt --edition 2024 % 2> /dev/null
+
+" Format JS/TS/JSON on save using prettier
+au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc setlocal autoread
+au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc silent! !prettier --write % 2> /dev/null

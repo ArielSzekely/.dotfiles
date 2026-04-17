@@ -12,3 +12,6 @@
 [submodule "claude/claude-secrets"]
 	path = claude/claude-secrets
 	url = git@github.com:ArielSzekely/claude-secrets.git
+[submodule "vim/.vim/pack/plugins/start/yats.vim"]
+	path = vim/.vim/pack/plugins/start/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim
