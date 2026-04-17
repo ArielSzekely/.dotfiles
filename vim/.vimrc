@@ -105,6 +105,10 @@ au BufWritePost *.py silent! !black % > /dev/null 2>&1
 au BufNewFile,BufRead *.c,*.cc,*.cpp,*.h,*.hpp setlocal autoread
 au BufWritePost *.c,*.cc,*.cpp,*.h,*.hpp silent! !clang-format -i % > /dev/null 2>&1
 
-" Format JS/TS/JSON on save using prettier
-au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc setlocal autoread
-au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc silent! !prettier --write % > /dev/null 2>&1
+" Format shell scripts on save using shfmt
+au BufNewFile,BufRead *.sh,*.bash setlocal autoread
+au BufWritePost *.sh,*.bash silent! !shfmt -w % > /dev/null 2>&1
+
+" Format JS/TS/JSON/YAML on save using prettier
+au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc,*.yml,*.yaml,*.html,*.xml setlocal autoread
+au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc,*.yml,*.yaml,*.html,*.xml silent! !prettier --write % > /dev/null 2>&1
