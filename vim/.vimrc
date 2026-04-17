@@ -88,8 +88,6 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\
-au Bufenter,BufRead,BufnewFile *.p4 set filetype=p4
-au Bufenter,BufRead,BufnewFile *.p4 source ~/.vim/p4.vim
 
 " Format go code on save, but do it silently
 au BufNewFile,BufRead *.go setlocal autoread
@@ -98,6 +96,14 @@ au BufWritePost *.go silent! !gofmt -w % 2> /dev/null
 " Format rust code on save, but do it silently
 au BufNewFile,BufRead *.rs setlocal autoread
 au BufWritePost *.rs silent! !rustfmt --edition 2024 % 2> /dev/null
+
+" Format python code on save, but do it silently
+au BufNewFile,BufRead *.py setlocal autoread
+au BufWritePost *.py silent! !black % > /dev/null 2>&1
+
+" Format C/C++ code on save, but do it silently
+au BufNewFile,BufRead *.c,*.cc,*.cpp,*.h,*.hpp setlocal autoread
+au BufWritePost *.c,*.cc,*.cpp,*.h,*.hpp silent! !clang-format -i % > /dev/null 2>&1
 
 " Format JS/TS/JSON on save using prettier
 au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc setlocal autoread
