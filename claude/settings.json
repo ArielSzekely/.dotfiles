@@ -6,6 +6,7 @@
       "Bash(sort:*)",
       "Bash(find:*)",
       "Bash(cat:*)",
+      "Bash(echo:*)",
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(protoc:*)",
