@@ -21,6 +21,7 @@
       "Bash(go get:*)",
       "Bash(go mod:*)",
       "Bash(go test:*)",
+      "Bash(gofmt:*)",
       "Bash(sed -i:*)",
       "Bash(sed -n:*)",
       "Read(//home/arielck/.cargo/registry/src/**)"
