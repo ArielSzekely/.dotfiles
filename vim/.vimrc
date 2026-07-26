@@ -111,4 +111,11 @@ au BufWritePost *.sh,*.bash silent! !shfmt -w % > /dev/null 2>&1
 
 " Format JS/TS/JSON/YAML on save using prettier
 au BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc,*.yml,*.yaml,*.html,*.xml,*.md setlocal autoread
-au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc,*.yml,*.yaml,*.html,*.xml,*.md silent! !prettier --write % > /dev/null 2>&1
+au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.json,*.jsonc,*.yml,*.yaml,*.html,*.xml silent! !prettier --write % > /dev/null 2>&1
+
+function! PrettifyMdIfSmall()
+  if getfsize(expand('%')) < 100000
+    silent! !prettier --write % > /dev/null 2>&1
+  endif
+endfunction
+au BufWritePost *.md call PrettifyMdIfSmall()
